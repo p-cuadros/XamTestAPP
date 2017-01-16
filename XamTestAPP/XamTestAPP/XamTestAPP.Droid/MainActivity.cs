@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
 
 namespace XamTestAPP.Droid
 {
@@ -20,6 +21,7 @@ namespace XamTestAPP.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            MobileCenter.Configure("8c4e5065-40d9-4881-af2c-1b4da410e481");
             LoadApplication(new App());
         }
     }
